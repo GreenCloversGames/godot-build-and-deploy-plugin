@@ -1,4 +1,5 @@
 .godot/
+testexport/
 
 # Godot-specific ignores
 .import/
