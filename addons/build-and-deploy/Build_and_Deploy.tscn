@@ -157,7 +157,7 @@ text = "Click to select a directory"
 
 [node name="BuildDir" type="LineEdit" parent="TabBox/Deploy/ScrollContainer/VBoxContainer"]
 layout_mode = 2
-placeholder_text = "Path To Build Folder"
+placeholder_text = "Path3D To Build Folder"
 
 [node name="ChannelsLabel" type="Label" parent="TabBox/Deploy/ScrollContainer/VBoxContainer"]
 layout_mode = 2
@@ -234,7 +234,7 @@ text = "Click to select a directory"
 
 [node name="BuildDir" type="LineEdit" parent="TabBox/QuickDeploy/ScrollContainer/VBoxContainer"]
 layout_mode = 2
-placeholder_text = "Path To Folder"
+placeholder_text = "Path3D To Folder"
 
 [node name="ChannelsLabel" type="Label" parent="TabBox/QuickDeploy/ScrollContainer/VBoxContainer"]
 layout_mode = 2
@@ -276,17 +276,17 @@ text = "This menu will let you use Butler off path"
 
 [node name="offPathToggle" type="CheckButton" parent="TabBox/Settings/ScrollContainer/VBoxContainer"]
 layout_mode = 2
-text = "Use Butler Off Path"
+text = "Use Butler Off Path3D"
 
 [node name="SelectPath" type="Button" parent="TabBox/Settings/ScrollContainer/VBoxContainer"]
 visible = false
 layout_mode = 2
-text = "Click To Select Path"
+text = "Click To Select Path3D"
 
 [node name="ButPath" type="LineEdit" parent="TabBox/Settings/ScrollContainer/VBoxContainer"]
 visible = false
 layout_mode = 2
-placeholder_text = "Path To Butler Executable"
+placeholder_text = "Path3D To Butler Executable"
 
 [node name="SaveSett" type="Button" parent="TabBox/Settings/ScrollContainer/VBoxContainer"]
 layout_mode = 2
@@ -294,12 +294,12 @@ text = "Save"
 
 [node name="FileDialog" type="FileDialog" parent="."]
 mode = 2
-dialog_text = "Select a Directory to Deploy From (use the same Directory you are building into)"
+dialog_text = "Select a DirAccess to Deploy From (use the same DirAccess you are building into)"
 access = 2
 
 [node name="QuickFile" type="FileDialog" parent="."]
 mode = 2
-dialog_text = "Select a Directory to Deploy From (use the same Directory you are building into)"
+dialog_text = "Select a DirAccess to Deploy From (use the same DirAccess you are building into)"
 access = 2
 
 [node name="ButlerPath" type="FileDialog" parent="."]
