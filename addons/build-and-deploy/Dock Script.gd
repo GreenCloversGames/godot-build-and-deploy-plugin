@@ -16,6 +16,9 @@ var persistant_dict = {
 	"Settings": {}
 }
 
+# Used to check if it's the version loaded by the plugin or not
+var is_plugin = false
+
 
 #var blank_presets_dict: Dictionary = {
 #	"is logged in": false,
@@ -68,6 +71,10 @@ func load_build_presets():
 
 
 func update_ui():
+	# If the program isn't running in the dock? We need to stop it from loading
+	# so it doesn't overwrite the labels
+	if not is_plugin:
+		return
 	var deploy_presets = $TabBox/Deploy.presets_dict
 	print("updating ui with: ", deploy_presets)
 	$TabBox/Deploy/ScrollContainer/VBoxContainer/User.text = deploy_presets["user"]
